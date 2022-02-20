@@ -47,6 +47,7 @@ section-titles: true
 
 В ходе выполнения данной лабораторной работы была написана следующая программа.
 
+```
 def gamm(t_text, t_key):
     res = ''
     for i, j in zip(t_text, t_key):
@@ -56,7 +57,10 @@ def gamm(t_text, t_key):
             temp = chr(ord(i) ^ ord(j))
         res += temp
     return res
+```
+##
 
+```
 P1 = 'С Новым годом, друзья!'
 P2 = 'лабораторная работа н7'
 Key = 'qwertyuiopasdfghjklzxc'
@@ -70,6 +74,8 @@ t_C = gamm(C1, C2)
 t_P2 = gamm(t_P1, t_C)
 print(t_P1)
 print(t_P2)
+```
+## 
 
 Первая функция - функция гаммирования. Далее определяем первый и второй шифротексты из текстов и ключа.
 
